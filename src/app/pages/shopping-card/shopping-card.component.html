@@ -1,0 +1,26 @@
+
+<main>
+    <div class="panier">
+      <h3>
+        Shopping card total : {{total}} DT
+      </h3>
+
+      <div class="article" *ngFor="let product of shoppingCard let i=index ">
+
+
+
+        <mat-icon (click)="remove(product)" class="icon" aria-hidden="false" aria-label="Example home icon" fontIcon="close"></mat-icon>
+        <mat-icon class="icon" aria-hidden="false" aria-label="Example home icon" fontIcon="favorite"></mat-icon>
+
+        <img src='{{product.image}}' alt="{{product.name}}">
+        <div class="product-description">
+          <h5>{{product.name}}</h5>
+
+        </div>
+        <button (click)="inc(i)">+</button>
+          <p class="quantite">{{product.quantity}}</p>
+        <button (click)="desc(i)">-</button>
+        <p class="prix">{{product.price}}</p>
+      </div>
+    </div>
+</main>

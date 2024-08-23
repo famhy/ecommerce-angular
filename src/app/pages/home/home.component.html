@@ -1,0 +1,19 @@
+<div class="container">
+  <mat-card class="example-card" appearance="outlined" *ngFor="let product of products">
+    <mat-card-header class="card-title">
+     {{product.name}}
+    </mat-card-header>
+    <img mat-card-image src='{{product.image}}' alt="{{product.name}}">
+    <mat-card-content class="card-price">
+      {{product.price}} DT
+    </mat-card-content>
+    <mat-card-actions class="card-action">
+      <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="shopping_cart" (click)="addToShoppingCard(product)"></mat-icon>
+      <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="visibility" (click)="openDialog(product)"></mat-icon>
+
+    </mat-card-actions>
+  </mat-card>
+
+
+</div>
+

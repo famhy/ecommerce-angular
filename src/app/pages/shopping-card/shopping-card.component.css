@@ -1,0 +1,46 @@
+.panier{
+  margin: 10%;
+  padding: 10px;
+}
+
+.panier h3{
+  border-bottom: 1px solid rgb(224 224 224);
+}
+
+.panier .article{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 15px;
+  border-bottom: 1px solid rgb(224 224 224);
+}
+
+.panier .article .icon{
+  font-size: 24px;
+  color: rgb(173, 173, 173);
+  margin:5px;
+  cursor: pointer;
+}
+
+.panier .article img{
+  width: 100px;
+  height: auto;
+  margin: 20px;
+}
+.product-description{
+  width: 40%;
+}
+.article button{
+  height: 25px;
+  width: 25px;
+  margin: 0 25px;
+  text-align: center;
+}
+
+.panier .article p{
+  margin: 0;
+}
+
+.panier .article h5{
+  margin: 0;
+}
